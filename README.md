@@ -134,3 +134,5 @@ CREATE TABLE users(#个人信息
 #### 分工
 
 [函数简介.txt](https://github.com/ZH-jobs/douyin/files/10821493/default.txt)
+
+由于项目制作混乱,且组员水平良莠不齐,导致函数定义较乱,函数重名,将多个接口写成了屎山,其中标注没啥用的函数都是在写接口时候乱定义的函数,包括文件夹
