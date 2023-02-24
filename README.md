@@ -17,8 +17,7 @@
 #### 代码结构
 douyin
 
-    │  demo-test
-    
+    │  demo-test   
     │  go.mod
     │  go.sum
     │  main
