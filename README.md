@@ -18,5 +18,7 @@
 douyin
 
 > controller
+
 >> action.go
+
 >> common_struct.go
