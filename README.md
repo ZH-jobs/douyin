@@ -131,3 +131,5 @@ CREATE TABLE users(#个人信息
     favorite_count BIGINT#喜欢视频总数
 );
 ```
+#### 分工
+
