@@ -1,0 +1,29 @@
+common_struct.go //通用结构体  周昊
+Token.go         //Token组件 周昊
+Mysql.go         //数据库及网站基本信息 周昊
+Middlewares      //用来解决跨域问题 周昊
+getDB.go         //连接数据库 赵常健
+
+基础接口
+Feed.go         //视频流接口 周昊   （完成）
+Login.go        //用户登陆   周昊 （完成）
+Register.go     //用户注册   周昊  （完成）
+user.go/User     //用户信息  赵常健  （完成）
+publish.go /Publish     //投稿接口  秦鑫  （完成）
+publish.go /PublishList //视频发布接口(显示用户发布的视频）周昊 (完成）
+互动接口
+FavoriteAction.go/FavoriteAction//赞操作 (有bug)
+FavoriteList.go/FavoriteList  //喜欢列表 未测试
+action.go/CommentAction/评论操作 赵常健 (完成）（删除评论未测）
+list.go/List     //评论列表   赵常健 （半完成）
+社交接口
+RelationAction.go/RelationAction//关注操作 未测试
+FollowList.go/FollowList        //关注列表  未测试
+FollowerList.go/FollowerList  //粉丝列表 未测试
+FriendList.go/FriendList       //好友列表  未测试
+MessageAction.go //发送消息  周昊  （完成）
+message.go/MessageChat//聊天消息  秦鑫  （完成）
+
+
+
+

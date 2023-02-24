@@ -1,0 +1,10 @@
+common_struct.go:公用结构体
+Follow.go :用于接受客户端的关注操作和获取关注列表、粉丝列表操作
+FollowAction.go :关注和取消关注操作，在数据库中增加或删除相应的记录
+GetFollowList.go : 从数据库中找到对应的用户并读取其关注和关注者列表。
+RelationFollowList.go : 接受前端传来的ID，向数据库发送请求
+RelatoinModel.go ：进行关注和取消关注后对数据中user的相关参数进行修改‘
+RelationService.go ：数据库的连接与关闭。
+test_data.go: 测试时所用的数据
+Favorite.go :接收前端的点赞操作和获取点赞列表操作
+FavoriteAction.go:获取点赞列表的操作

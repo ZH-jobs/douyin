@@ -1,0 +1,59 @@
+create database douyin;//特别注意的是，linux对于大小写敏感，而gorm会将大写自动转为小写，所以表单名称不要用大写字母
+
+CREATE TABLE video(#视频表单
+	Video_id BIGINT PRIMARY KEY AUTO_INCREMENT, #视频id号
+     User_id  BIGINT,             #用户id号
+    play_url VARCHAR(999),            #视频地址
+    cover_url VARCHAR(999),           #封面地址
+    title     VARCHAR(999),              #标题
+    favorite_count BIGINT,       #喜欢数目
+    comment_count    BIGINT,      #评论数目
+    Date      DATETIME    #投稿日期
+);
+
+CREATE TABLE favourite_action(#点赞
+    id       BIGINT PRIMARY KEY AUTO_INCREMENT,#自增id,不用插入该项
+    Video_id BIGINT,
+    User_id  BIGINT
+);
+
+CREATE TABLE follower_list(#被关注动作
+    id       BIGINT PRIMARY KEY AUTO_INCREMENT,#自增id,不用插入该项
+    User_id  BIGINT,#关注者
+    follower_id BIGINT#关注动作发起者(粉丝)
+);
+
+CREATE TABLE follow_list(#关注动作
+    id       BIGINT PRIMARY KEY AUTO_INCREMENT,#自增id,不用插入该项
+    User_id  BIGINT,#关注动作发起者
+    follow_id BIGINT#关注者
+);
+
+CREATE TABLE comment_action(#评论动作
+    id       BIGINT PRIMARY KEY AUTO_INCREMENT,#自增id,不用插入该项
+    Video_id BIGINT,
+    User_id  BIGINT,#动作发起者
+    comment_id BIGINT,
+    content   VARCHAR(999),#评论内容
+    comment_time DATETIME#评论时间
+);
+
+CREATE TABLE message_list(#消息动作
+    id       BIGINT PRIMARY KEY AUTO_INCREMENT,#自增id,不用插入该项
+    Message_id BIGINT,
+    to_user_id  BIGINT,
+    from_user_id BIGINT,
+    content    VARCHAR(999),
+    creat_time DATETIME
+);
+
+CREATE TABLE users(#个人信息
+    User_id       BIGINT  PRIMARY KEY AUTO_INCREMENT,
+    name          VARCHAR(999),
+    follow_count BIGINT,#关注数
+    follower_count BIGINT,#粉丝数
+    password  VARCHAR(999),
+    total_favorited BIGINT,#他人喜欢总数
+    work_count    BIGINT,#作品数量
+    favorite_count BIGINT#喜欢视频总数
+);

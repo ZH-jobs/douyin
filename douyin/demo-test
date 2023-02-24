@@ -1,0 +1,13 @@
+{
+    "status_code": 0,
+    "status_msg": "",
+    "user_id": 2,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjIsImV4cCI6MTY3NzY4MzQ4OCwiaWF0IjoxNjc3MDc4Njg4LCJzdWIiOiJ1c2VyIHRva2VuIn0.QZmhJzL1rlz-GeJ-_bAj8c2V9PTHJiAI744cyBmU_Mo"
+}
+
+{
+    "status_code": 0,
+    "status_msg": "",
+    "user_id": 1,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VySWQiOjEsImV4cCI6MTY3NzY4Mzc4OCwiaWF0IjoxNjc3MDc4OTg4LCJzdWIiOiJ1c2VyIHRva2VuIn0.DkbjwWtuClaLdT7bBR_-xX71-lY9Qx43KOtZwJQWhFg"
+}
